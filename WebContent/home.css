@@ -1,0 +1,52 @@
+html { 
+  background: url(background3.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:relative;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  z-index:20
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+	left: 600px;
+	top:300px;
+}
+
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}

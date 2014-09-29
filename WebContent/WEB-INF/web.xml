@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>PlacementNews</display-name>
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>Mail</servlet-name>
+  	<servlet-class>Placement.MailApp</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Mail1</servlet-name>
+  	<servlet-class>Placement.MailApp1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Mail</servlet-name>
+  	<url-pattern>/SendMail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>Mail1</servlet-name>
+  	<url-pattern>/NotifyMail</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
