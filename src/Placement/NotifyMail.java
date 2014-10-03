@@ -14,7 +14,7 @@ public class NotifyMail
 	public static void send(String[] to,String company_name)
 	{
 		String subject="Placement News:-"+company_name+" Registration Open";
-		String content="Hi everyone,"+ "\n You are shortlisted for "+company_name;
+		String content="Hi ,"+ "\n Registration for "+company_name+"are now open.";
 		final String from="placements.pict@gmail.com";
 		final String password="pict12345";
 		Properties prop=new Properties();
